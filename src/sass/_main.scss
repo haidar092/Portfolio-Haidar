@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+$yellow: #f9ca24;
+$lightdark: #333;
+$dark: #111;
+$track: #222;
+$white: #fff;
+$light: #eee;
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.5s linear;
+}
+
+*::selection {
+  background: $yellow;
+  color: $lightdark;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: $track;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: $yellow;
+}
+
+body {
+  background-color: $dark;
+  overflow-x: hidden;
+  padding-left: 35rem;
+  background-image: url(../images/isto.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat repeat;
+  @media (max-width:700px) {
+    padding-left: 0;
+    
+  }
+}
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.btn {
+  padding: 0.7rem 3rem !important;
+  background: $lightdark !important;
+  color: $white !important;
+  cursor: pointer;
+  margin-top: 3rem !important;
+  font-size: 2rem !important;
+  border-radius: 5rem !important;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  &:hover {
+    transform: scale(1.05);
+
+    background: $yellow !important;
+  }
+}

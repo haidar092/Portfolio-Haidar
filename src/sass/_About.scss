@@ -1,0 +1,68 @@
+.about {
+  margin-bottom: 2rem;
+  .row {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+
+    .image img {
+      height: 35rem;
+      margin-left: 1rem;
+      width: 30rem;
+      border-radius: 0.5rem;
+      border: 1rem solid $yellow;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      &:hover {
+        transform: rotate3d(2, -1, -1, -0.2turn);
+        transition: 1.2s ease-in-out;
+      }
+    }
+
+    .info {
+      flex: 1 1 48rem;
+      padding: 2rem 1rem;
+      padding-left: 5rem;
+      h3 {
+        font-size: 2.3rem;
+        color: $yellow;
+        padding: 1rem 1rem;
+        font-weight: normal;
+        text-align: justify;
+        span {
+          color: $light;
+          padding: 0 0.5rem;
+          text-align: justify;
+        }
+      }
+    }
+    .counter {
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+      flex: 1 1 48rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .box {
+        width: 20rem;
+        background: $lightdark;
+        text-align: center;
+        padding: 2rem;
+        margin: 2rem;
+        &:hover {
+          transform: scale(1.2);
+        }
+        span {
+          font-size: 5rem;
+          color: $yellow;
+        }
+        h3 {
+          font-size: 3rem;
+          color: $white;
+        }
+      }
+    }
+  }
+}

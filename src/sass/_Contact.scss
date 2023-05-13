@@ -1,0 +1,64 @@
+.contact {
+  margin-bottom: 3rem;
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .content {
+      flex: 1 1 30rem;
+      padding: 4rem;
+      padding-bottom: 0;
+      .title {
+        text-transform: uppercase;
+        color: $white;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+      }
+      .info h3 {
+        text-transform: none;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        color: $light;
+        padding: 1rem 0;
+        font-weight: normal;
+        .i {
+          padding-right: 1rem;
+          font-size: 4rem;
+          color: $yellow !important;
+        }
+      }
+    }
+    form {
+      flex: 1 1 45rem;
+      padding: 2rem;
+      margin: 2rem;
+      margin-bottom: 2rem;
+      .box {
+        padding: 1.5rem !important;
+        margin: 1rem 0;
+        background: $lightdark;
+        color: $white !important;
+        text-transform: none;
+        font-size: 1.7rem !important;
+        width: 100%;
+      }
+      input {
+        color: $white !important;
+      }
+      .message {
+        height: 15rem;
+        resize: none;
+      }
+    }
+  }
+}
+.MuiFormLabel-root {
+  margin: 1rem 0;
+  padding-left: 20px !important;
+  color: $white !important;
+  text-transform: none;
+  font-size: 1.7rem !important;
+  width: 100%;
+}
